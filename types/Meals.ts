@@ -7,4 +7,4 @@ export interface Meal {
   creator: string
 }
 
-export type Meals = Meal[] | []
+export type Meals = Meal[]
