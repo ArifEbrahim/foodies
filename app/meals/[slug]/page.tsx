@@ -1,5 +1,3 @@
 export default function MealDetailsPage() {
-  return (
-    <div>MealDetails</div>
-  )
+  return <div>MealDetails</div>
 }

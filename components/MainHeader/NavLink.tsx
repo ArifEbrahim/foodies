@@ -13,7 +13,10 @@ export default function NavLink({ href, children }: NavLinkProps) {
   const isActivePath = path.startsWith(href)
 
   return (
-    <Link href={href} className={isActivePath ? `${styles.link} ${styles.active}` : styles.link}>
+    <Link
+      href={href}
+      className={isActivePath ? `${styles.link} ${styles.active}` : styles.link}
+    >
       {children}
     </Link>
   )

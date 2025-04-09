@@ -1,5 +1,3 @@
 export default function ShareMealPage() {
-  return (
-    <div>ShareMeal</div>
-  )
+  return <div>ShareMeal</div>
 }

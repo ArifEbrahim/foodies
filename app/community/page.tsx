@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
-import mealIcon from '@/assets/icons/meal.png';
-import communityIcon from '@/assets/icons/community.png';
-import eventsIcon from '@/assets/icons/events.png';
-import styles from './page.module.css';
+import mealIcon from '@/assets/icons/meal.png'
+import communityIcon from '@/assets/icons/community.png'
+import eventsIcon from '@/assets/icons/events.png'
+import styles from './page.module.css'
 
 export default function CommunityPage() {
   return (
@@ -36,5 +36,5 @@ export default function CommunityPage() {
         </ul>
       </main>
     </>
-  );
+  )
 }
