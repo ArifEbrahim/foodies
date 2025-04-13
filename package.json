@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "prettier --check './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "lint:fix": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "lint:fix": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "prepare": "husky"
   },
   "dependencies": {
     "better-sqlite3": "^11.9.1",
@@ -16,19 +17,20 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
+    "@eslint/eslintrc": "^3.3.1",
     "@types/better-sqlite3": "^7.6.13",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@typescript-eslint/eslint-plugin": "^8.19.1",
-    "@typescript-eslint/parser": "^8.19.1",
-    "eslint": "^9",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
     "eslint-config-next": "15.2.5",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "prettier": "^3.4.2",
-    "typescript": "^5"
+    "eslint-plugin-prettier": "^5.2.6",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
   },
   "packageManager": "pnpm@9.15.2"
 }
