@@ -1,9 +1,10 @@
+import logoImg from '@/assets/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
-import NavLink from './NavLink'
-import logoImg from '@/assets/logo.png'
+
 import MainHeaderBackground from '../MainHeader/MainHeaderBackground'
 import styles from './MainHeader.module.css'
+import NavLink from './NavLink'
 
 export default function MainHeader() {
   return (

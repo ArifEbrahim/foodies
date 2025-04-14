@@ -36,12 +36,12 @@
   },
   "packageManager": "pnpm@9.15.2",
   "lint-staged": {
-    "*.{js,ts,tsx}": [
+    "*.{js,jsx,ts,tsx,css}": [
       "eslint --fix",
       "prettier --write"
     ],
     "*.{md,json}": [
-      "prettier -w"
+      "prettier --write"
     ]
   }
 }

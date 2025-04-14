@@ -1,7 +1,8 @@
-import Image from 'next/image'
-import styles from './page.module.css'
 import { getMeal } from '@/lib/meals'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
+
+import styles from './page.module.css'
 
 export default async function MealDetailsPage({
   params
