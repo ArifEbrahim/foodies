@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { PropsWithChildren } from 'react'
-
 import styles from './NavLink.module.css'
 
 interface NavLinkProps extends PropsWithChildren {

@@ -1,6 +1,5 @@
 import { Meals } from '@/types/Meals'
 import { PropsWithChildren } from 'react'
-
 import MealItem from './MealItem'
 import styles from './MealsGrid.module.css'
 

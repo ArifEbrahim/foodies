@@ -2,7 +2,6 @@ import MealsGrid from '@/components/Meals/MealsGrid'
 import { getMeals } from '@/lib/meals'
 import Link from 'next/link'
 import { Suspense } from 'react'
-
 import styles from './page.module.css'
 
 async function Meals() {

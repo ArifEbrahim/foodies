@@ -1,7 +1,6 @@
 import logoImg from '@/assets/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
-
 import MainHeaderBackground from '../MainHeader/MainHeaderBackground'
 import styles from './MainHeader.module.css'
 import NavLink from './NavLink'

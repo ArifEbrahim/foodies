@@ -1,7 +1,6 @@
 import { Meal } from '@/types/Meals'
 import Image from 'next/image'
 import Link from 'next/link'
-
 import styles from './MealItem.module.css'
 
 export default function MealItem({
