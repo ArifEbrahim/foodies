@@ -10,3 +10,12 @@ export interface Meal {
 }
 
 export type Meals = Meal[]
+
+export interface ShareMealFormInputs {
+  title: string
+  image: File
+  summary: string
+  creator: string
+  creatorEmail: string
+  instructions: string
+}
