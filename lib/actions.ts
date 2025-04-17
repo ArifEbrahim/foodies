@@ -1,5 +1,6 @@
 'use server'
 
+import { redirect } from 'next/navigation'
 import { saveMeal } from './meals'
 
 export async function shareMeal(formData: FormData) {
@@ -12,4 +13,5 @@ export async function shareMeal(formData: FormData) {
     creatorEmail: formData.get('email') as string
   }
   await saveMeal(meal)
+  redirect('/meals')
 }
