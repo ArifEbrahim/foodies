@@ -3,6 +3,10 @@
 import { redirect } from 'next/navigation'
 import { saveMeal } from './meals'
 
+const isInvalid = (text: string) => {
+  return !text || text.trim() === ''
+}
+
 export async function shareMeal(formData: FormData) {
   const meal = {
     title: formData.get('title') as string,
@@ -12,6 +16,20 @@ export async function shareMeal(formData: FormData) {
     creator: formData.get('name') as string,
     creatorEmail: formData.get('email') as string
   }
+
+  if (
+    isInvalid(meal.title) ||
+    isInvalid(meal.summary) ||
+    isInvalid(meal.instructions) ||
+    isInvalid(meal.creator) ||
+    isInvalid(meal.creatorEmail) ||
+    !meal.creatorEmail.includes('@') ||
+    !meal.image ||
+    meal.image.size === 0
+  ) {
+    throw new Error('Invalid input')
+  }
+
   await saveMeal(meal)
   redirect('/meals')
 }
