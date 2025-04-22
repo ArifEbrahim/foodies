@@ -43,7 +43,7 @@ export default function ImagePicker({ label, name }: ImagePickerProps) {
           className={styles.input}
           type="file"
           id={name}
-          accept="image/png, image/jpeg"
+          accept="image/png, image/jpeg, image/jpg"
           name={name}
           ref={imageInput}
           onChange={handleImageChange}
