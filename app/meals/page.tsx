@@ -1,4 +1,5 @@
 import MealsGrid from '@/components/Meals/MealsGrid'
+import Spinner from '@/components/Spinner/Spinner'
 import { getMeals } from '@/lib/meals'
 import Link from 'next/link'
 import { Suspense } from 'react'
@@ -8,8 +9,6 @@ async function Meals() {
   const meals = await getMeals()
   return <MealsGrid meals={meals} />
 }
-
-const Loading = () => <p className={styles.loading}>Fetching meals...</p>
 
 export default function MealsPage() {
   return (
@@ -25,7 +24,7 @@ export default function MealsPage() {
         </p>
       </header>
       <main className={styles.main}>
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={<Spinner />}>
           <Meals />
         </Suspense>
       </main>
